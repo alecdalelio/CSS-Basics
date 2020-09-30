@@ -5,13 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/styles/styles2.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 <body>
-    <ul>
-        <li>Products</li>
-        <li>Music</li>
-        <li>Play</li>
-        <li>Connect</li>
-    </ul>
+<div>
+    <nav>
+        <ul>
+            <li class="logo">Spotify</li>
+            <li class="btn"><span class="fas fa-bars"></span></li>
+            <div class="items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Browse</a></li>
+            <li><a href="#">Playlists</a></li>
+            <li><a href="#">My library</a></li>
+            </div>
+            <li class="search-icon">
+                <input type="search" placeholder="Search">
+                <label class="icon">
+                    <span class="fas fa-search"></span>
+                </label>
+              
+            </li>
+        </ul>
+    </nav>
+</div>
+<script>
+    $('nav ul li.btn span').click(function(){
+        $('nav ul div.items').toggleClass("show");
+    })
+</script>
+
 </body>
 </html>
